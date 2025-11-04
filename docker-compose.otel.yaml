@@ -24,6 +24,7 @@ services:
     environment:
       - ENABLE_OTEL=true
       - ENABLE_OTEL_METRICS=true
+      - ENABLE_OTEL_TRACES=true
       - OTEL_EXPORTER_OTLP_INSECURE=true # Use insecure connection for OTLP, remove in production
       - OTEL_EXPORTER_OTLP_ENDPOINT=http://grafana:4317
       - OTEL_SERVICE_NAME=open-webui
